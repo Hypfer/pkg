@@ -39,7 +39,7 @@
     "into-stream": "^5.1.1",
     "minimist": "^1.2.5",
     "multistream": "^2.1.1",
-    "pkg-fetch": "^2.6.9",
+    "pkg-fetch": "git+https://github.com/Hypfer/pkg-fetch",
     "progress": "^2.0.3",
     "resolve": "^1.15.1",
     "stream-meter": "^1.0.4"
@@ -73,13 +73,6 @@
     "prepublishOnly": "eslint-klopov . && npm run test:no-npm",
     "test": "eslint-klopov . && npm run babel && node test/test.js node14 no-npm && node test/test.js node12 no-npm && node test/test.js node10 no-npm && node test/test.js host only-npm",
     "test:no-npm": "node test/test.js host no-npm"
-  },
-  "eslintConfig": {
-    "extends": "klopov",
-    "parser": "babel-eslint",
-    "rules": {
-      "wrap-iife": "off"
-    }
   },
   "greenkeeper": {
     "emails": false,
